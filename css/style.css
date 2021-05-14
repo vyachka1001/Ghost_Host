@@ -16,7 +16,7 @@ body {
 }
 a {
 	color: inherit;
- }
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -600,52 +600,49 @@ body {
     background: url('../images/comments_section/comments_bg.png') 0 0/100% 100% no-repeat;
 }
 
-.comments__body {
+.comments__container {
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.comments__text {
+    max-width: 830px;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    height: 190px;
-    color: #FFFFFF;
 }
 
-.comments__text {
-    max-width: 870px;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.comments__link {
+.quotes__nav {
     display: flex;
+    flex-direction: row;
+    width: 157px;
+}
+.quote__author {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 12px;
+    border-right: 1px solid #bbbbbb;
+}
+
+.quotes__links {
+    display: flex;
+    width: 48px;
     align-items: center;
-    z-index: 100;
+    justify-content: space-between;
+    margin-left: 12px;
 }
-.comments__link p {
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 20px;
-}
-.comments__link span {
-    display: block;
-    width: 1px;
-    height: 16px;
-    margin: 0 10px;
-    background-color: #FFF;
-}
-.dots {
-    display: flex;
-}
-.dots li + li {
-    margin-left: 10px;
-}
-.dots li {
+.non__active,
+.current__quote {
     width: 8px;
     height: 8px;
-    border: 1px solid #FFF;
-    border-radius: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
 }
-.dots .active {
-    background-color: #FFF;
+.current__quote {
+    background-color: white;
 }
 
 /* <----FUNCTIONS---->*/
