@@ -505,104 +505,93 @@ body {
     width: 100%;
 }
 
-.about__body {
+.about__section {
     display: flex;
-    align-items: center;
-    border-top: 2px dashed #D8D8D8;
-    border-spacing: 5px;
+    flex-direction: row;
+    justify-content: space-between;
     height: 400px;
     padding: 100px 0;
+    border-top: 3px dashed #bbbbbb;
 }
-.about__container  {
+.about__container {
     width: 100%;
-    border-right: 2px dashed #D8D8D8;
-    border-spacing: 5px;
+    border-right: 2px dashed #bbbbbb;
     padding-right: 100px;
-    margin-right: 100px;
 }
-.about__text {
-    display: inline-block;
-    width: 100%;
-    max-width: 620px;
-    font-size: 18px;
-    text-overflow: ellipsis;
-    color: #bbbbbb;
-}
-.about__title {
+
+.about__header,
+.about__span{
     font-size: 35px;
-    font-weight: 700;
-    margin-bottom: 20px;
-	color: #303030;
+    color: black;
 }
-.about__title span {
+.about__span {
+    font-weight: 500;
+}
+.about__header {
+    margin-bottom: 36px;
     font-weight: 900;
 }
 
-.list {
+.about__text {
+    font-size: 18px;
+    color: #bbbbbb;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.worker__list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-left: 100px;
     width: 100%;
 }
-.man {
+.worker__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    width: 115px;
+}
+.name {
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.role {
+    font-size: 15px;
+    margin-bottom: 13px;
+    color: #bbbbbb;
 }
 
-.man__icon {
-    display: block;
-    width: 100px;
-    height: 100px;
-    border: 3px solid #D8D8D8;
-    border-radius: 50%;
-}
-
-.man__links {
+.worker__links {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 85px;
 }
 
-.man__name {
-    margin: 15px 0 8px;
-    font-size: 17px;
-    font-weight: 600;
-	color: #303030;
-}
-.man__profession {
-    color: #bbbbbb;
-    margin-bottom: 13px;
-}
-
-.man__facebook,
-.man__twitter,
-.man__linkedin {
-    display: block;
-}
-
-.man__facebook,
-.man__twitter,
-.man__linkedin {
-    color: #bbbbbb;
-    transition: color 0.3s ease-in-out;
-}
-
-.man__facebook:hover,
-.man__twitter:hover,
-.man__linkedin:hover {
-    color: #1f89ba;
-}
-
-.man__facebook::before {
+.link__facebook::before{
     content: "\f09a";
 }
-.man__twitter::before {
+.link__twitter::before{
     content: "\f099";
 }
-.man__linkedin::before {
+.link__linked::before{
     content: "\f0c1";
+}
+
+.link__facebook,
+.link__twitter,
+.link__linked {
+    color: #bbbbbb;
+}
+
+.link__facebook:hover,
+.link__twitter:hover,
+.link__linked:hover {
+    color: #0faff1;
 }
 
 /* <----COMMENTS---->*/
