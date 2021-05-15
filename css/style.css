@@ -375,7 +375,7 @@ body {
     margin: 20px 28px;
     width: 200px;
     height: 300px;
-    padding: 10px 0;
+    padding: 9px 0;
 }
 .package__params__list::before,
 .package__params__list::after  {
@@ -388,7 +388,6 @@ body {
     height: 1px;
     background-color: #7f8d8c;
 }
-
 
 .package__params__list::before {
     top: 0;
