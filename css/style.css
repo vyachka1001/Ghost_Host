@@ -653,49 +653,40 @@ body {
 
 .functions__list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
-    height: 345px;
+    height: 342px;
 }
 
-.function_1 {
+.function__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 147px;
+    margin-top: 99px;
+    margin-bottom: 96px;
+}
+
+.fast__icon {
     --fun_color: #f1c40f;
     --fun_icon_code: "\f0e7";
 }
-.function_2 {
+.cloud__icon {
     --fun_color: #0faff1;
     --fun_icon_code: "\f0c2";
 }
-.function_3 {
+.domain__icon {
     --fun_color: #95a5a6;
     --fun_icon_code: "\f047";
 }
-.function_4 {
+.live__icon {
     --fun_color: #f1540f;
     --fun_icon_code: "\f086";
 }
-.function {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 25px;
-}
-.functions__icon {
-    position: relative;
-    width: 63px;
-    height: 63px;
-    border-radius: 50%;
-    background-color: var(--fun_color);
-    transition: transform 0.3s ease-in-out;
-}
-.functions__icon:hover {
-    transform: scale(1.2, 1.2);
-}
-.functions__icon::before {
+
+.func::before {
     content: var(--fun_icon_code);
     position: absolute;
     display: block;
@@ -706,18 +697,32 @@ body {
     font-size: 31px;
     transform: translate(-50%, -50%);
 }
-.function__title {
+
+.func {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--fun_color);
+    width: 60px;
+    height: 60px;
+}
+.func:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.function__header {
+    margin-top: 22px;
+    margin-bottom: 14px;
     font-size: 18px;
-    margin: 15px 0 8px;
-    font-weight: 600;
-	color: #303030;
+    font-weight: bold;
+    color: black;
 }
 .function__description {
-    max-width: 230px;
     font-size: 16px;
+    font-weight: 300;
     text-align: center;
     color: #bbbbbb;
 }
+
 /* <----FOOTER---->*/
  .footer{
 	background-color: #2A2A2A;
