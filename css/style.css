@@ -389,6 +389,7 @@ body {
     background-color: #7f8d8c;
 }
 
+
 .package__params__list::before {
     top: 0;
 }
@@ -460,8 +461,17 @@ body {
     border-color: #1abc9c;
 }
 
-.value {
-    color: var(--icon_color);
+.basic__value {
+    color: #f9d423;
+}
+.normal__value {
+    color: #7f8d8c;
+}
+.big__value {
+    color: #f85f40;
+}
+.biggest__value {
+    color: #1abc9c;
 }
 
 .icon i {
@@ -484,20 +494,25 @@ body {
     align-items: center;
     width: 105px;
     height: 66px;
+    margin-top: 34px;
     margin-bottom: 35px;
 }
 
-.package__price::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    z-index: 2;
+.package__price {
+    text-align: center;
     width: 100%;
-    height: 3px;
-    /*background-color: var(--icon_color); ???????*/
-    background-color: #4a4a4a;
-    margin-top: 8px;
+}
+.basic {
+    border-bottom: 3px solid #f9d423;
+}
+.normal {
+    border-bottom: 3px solid #7f8d8c;
+}
+.big {
+    border-bottom: 3px solid #f85f40;
+}
+.biggest {
+    border-bottom: 3px solid #1abc9c;
 }
 
 /* <----ABOUT---->*/
@@ -686,7 +701,7 @@ body {
     --fun_icon_code: "\f086";
 }
 
-.func::before {
+.func i::before {
     content: var(--fun_icon_code);
     position: absolute;
     display: block;
